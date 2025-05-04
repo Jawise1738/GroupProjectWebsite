@@ -4,7 +4,19 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+  h1 {
+        color: antiquewhite;
+  }
+
+  .navbar-title {
+    text-decoration: none;
+    color: inherit; 
+}
+
+.navbar-title h1 {
+    margin: 0; 
+}
+
   body, html {
     height: 100%;
     font-family: 'Segoe UI', sans-serif;
