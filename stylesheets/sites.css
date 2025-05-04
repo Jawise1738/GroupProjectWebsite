@@ -1,83 +1,129 @@
- 
- #header {
-    background-color: rgba(34, 190, 217, 0.8); 
-    text-align: center;
-    padding: 20px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-}
 
-#banner h1 {
-    font-size: 2.5em;
+* {
     margin: 0;
-    color: #256940; /
-    font-weight: bold;
-}
-
-#nav {
-    background-color: #64B8B1; 
-    padding: 15px;
-    text-align: center;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+ 
+  .hero {
+    background: url('../images/tropicalsmoothiemocktailhorizontal.jpg') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
     color: #F5F5F5;
-}
-
-nav a {
+  }
+  
+  .overlay {
+    background-color: rgba(34, 190, 217, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    position: relative;
+    z-index: 2;
+    background-color: #64B8B1;
+  }
+  
+  .navbar img {
+    height: 60px;
+  }
+  
+  .navbar a {
     color: #F5F5F5;
     text-decoration: none;
     font-size: large;
-    margin-right: 20px;
+    margin-left: 20px;
     padding: 15px;
-    transition: color 0.3s ease;
-}
-
-#nav a:hover {
-    background-color: #22BED9; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    background-color: #22BED9;
     border-radius: 5px;
-    color: #256940; 
-    text-decoration: none;
-}
-
-
-
-h1 {
-    font-size: 40px; 
+    color: #256940;
+  }
+  
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    top: 30%;
+    left: 10%;
+  }
+  
+  .hero-content h1 {
+    font-size: 40px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-h2 {
-    font-size: 30px; 
-}
-
-#footer {
-    background-color: #64B8B1; 
-    color: #F5F5F5; 
+    margin-bottom: 20px;
+    color: #F5F5F5;
+  }
+  
+  .hero-content p {
+    max-width: 500px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #F5F5F5;
+  }
+  
+  .menu-button {
+    background-color: #256940;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu-button:hover {
+    background-color: #22BED9;
+    color: #256940;
+  }
+  
+  
+  #footer {
+    background-color: #64B8B1;
+    color: #F5F5F5;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); 
-}
-
-#footer h2 {
-    color: #256940; 
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-#footer p {
-    color: #F5F5F5; 
-    font-size: 1em;
-    margin: 0;
-}
-
-#footer a {
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #footer a {
     color: #F5F5F5;
     text-decoration: none;
     font-size: large;
-    margin-right: 20px;
-    padding: 15px;
-    transition: color 0.3s ease;
-}
-
-#footer a:hover {
-    color: #256940; 
-    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px;
+    display: inline-block;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  #footer a:hover {
+    color: #256940;
     background-color: #22BED9;
-}
+    border-radius: 5px;
+  }
+  
+  #footer p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #F5F5F5;
+  }
+  
+  
