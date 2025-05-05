@@ -215,6 +215,48 @@
     color: #f9f9f9;
   }
   
+  h1.specials-title {
+    color: white;
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+    border-radius: 10px;
+  }
+
+  .container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+
+  .specials-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .specials-table th, .specials-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+
+  .specials-table thead tr {
+    background-color: #444;
+    color: white;
+  }
+
+  .specials-table ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Georgia', serif;
+    font-size: 0.9em;
+  }
   
   
   
