@@ -6,12 +6,14 @@
   <title>About Us | Tropical Delights Cafe</title>
   <link rel="stylesheet" href="stylesheets/sites.css" />
   <style>
-    #content {
+    main {
       margin-top: 100px; 
     }
   </style>
+ 
 </head>
 <body>
+
 
   <nav class="navbar">
     <img src="images/V1.png" alt="Tropical Delights Logo" />
@@ -27,8 +29,16 @@
     </section>
   </nav>
 
-  <div id="content">
-    <div class="about-section">
+  <main>
+    <header>
+      <h1 style="color: black; text-align: center;">About Us</h1>
+    </header>
+    <div class="container" style="width: 80%; margin: 0 auto; text-align: center;">
+      <p style="font-size: 1.2em; line-height: 1.6;">
+        Welcome to Tropical Delights Cafe! We are passionate about serving the finest coffee, delicious pastries, and a variety of tropical-inspired dishes. 
+        Our mission is to create a warm and inviting space where you can relax, connect, and enjoy the best flavors the tropics have to offer.
+  <main>
+    <section class="about-section">
       <h2>About Our Company</h2>
       <h3>Welcome to Tropical Delights Cafe!</h3>
       <p>
@@ -69,7 +79,26 @@
       </p></p>
       </p>
     </div>
-  </div>
+  </main>
+      </p>
+    </div>
+  </main>
+  <style>
+  body {
+    background: url("images/Welcome-to-Orlando-1.jpg") no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  main {
+    filter: blur(0);
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  }
+  </style>
+    </section>
+  </main>
 
   <footer id="footer">
     <a href="about.html">About Us</a>
@@ -78,6 +107,8 @@
     <a href="termsnconditions.html">Terms & Conditions</a>
     <p>&copy; 2025 Tropical Delights Cafe | All Rights Reserved</p>
   </footer>
+
+  
 
 </body>
 </html>
