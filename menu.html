@@ -5,10 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Menu | Tropical Delights Cafe</title>
   <link rel="stylesheet" href="stylesheets/sites.css" />
-  <style>
-   
-    
-  </style>
 </head>
 <body>
 
@@ -28,42 +24,32 @@
   </nav>
 
   <main>
-    <section>
-      <h2>Restaurant Menu</h2>
-      <form action="submit-order.php" method="POST">
-        <article class="menu-item">
-          <img src="images/grilled-chicken.jpg" alt="Grilled Chicken" />
-          <h3>Grilled Chicken</h3>
-          <p>Juicy grilled chicken served with vegetables.</p>
-          <p>$12.99</p>
-          <label for="grilled_chicken_qty">Quantity:</label>
-          <input type="number" name="grilled_chicken_qty" id="grilled_chicken_qty" min="0" value="0" />
+    <section class="menusection">
+      <h2>Our Menu</h2>
+      <section class="menu-grid">
+
+        <article class="menu-card">
+          <img src="images/mangobananasmoothie.jpg" alt="Tropical Smoothie">
+          <h3>Tropical Smoothie</h3>
+          <p>A refreshing blend of mango, pineapple, and banana.</p>
+          <p class="price">$4.99</p>
         </article>
 
-        <article class="menu-item">
-          <img src="images/steak.jpg" alt="Steak" />
-          <h3>Steak</h3>
-          <p>Steak with garlic butter sauce.</p>
-          <p>$19.99</p>
-          <label for="steak_qty">Quantity:</label>
-          <input type="number" name="steak_qty" id="steak_qty" min="0" value="0" />
+        <article class="menu-card">
+          <img src="images/acaibowl.jpeg" alt="Açaí Bowl">
+          <h3>Açaí Bowl</h3>
+          <p>Topped with fresh berries, granola, and honey.</p>
+          <p class="price">$6.50</p>
         </article>
 
-        <article class="menu-item">
-          <img src="images/pasta.jpg" alt="Pasta Primavera" />
-          <h3>Pasta Primavera</h3>
-          <p>Pasta with seasonal vegetables.</p>
-          <p>$10.99</p>
-          <label for="pasta_qty">Quantity:</label>
-          <input type="number" name="pasta_qty" id="pasta_qty" min="0" value="0" />
+        <article class="menu-card">
+          <img src="images/icedcoffee.webp" alt="Iced Coffee">
+          <h3>Iced Coffee</h3>
+          <p>Cold-brewed coffee with your choice of milk.</p>
+          <p class="price">$3.25</p>
         </article>
 
-        <!-- Add more <article> items as needed for other menu items -->
-
-        <section>
-          <button type="submit">Add to Cart / Checkout</button>
-        </section>
-      </form>
+      </section>
     </section>
   </main>
 

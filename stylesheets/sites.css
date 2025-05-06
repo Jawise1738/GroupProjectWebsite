@@ -7,8 +7,15 @@
     padding-top: 80px; /* adjust based on navbar height */
   }
   
+  html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
   main {
-    padding: 5px;
+    flex: 1;
   }
   
 * {
@@ -157,25 +164,78 @@
   transition: background-color 0.3s ease;
 }
 
-.menu-item {
+.menu-button:hover {
+  background-color: #ff7a1f;
+}
+
+.menusection h2 {
   text-align: center;
+  font-size: 2.5rem;
+  font-family: 'Georgia', serif;
+  margin: 2rem 0 1rem;
+  color: #111;
+}
+
+
+.menu-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem 2rem;
+}
+
+
+.menu-card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
   padding: 1rem;
-  border-bottom: 1px solid #ccc;
+  text-align: center;
+  transition: transform 0.3s ease;
 }
-.menu-item img {
-  max-width: 150px;
+
+.menu-card:hover {
+  transform: translateY(-6px);
+}
+
+.menu-card img {
+  width: 100%;
   height: auto;
+  border-radius: 0.5rem;
 }
+
+
+.menu-card h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 1rem 0 0.5rem;
+  font-family: 'Georgia', serif;
+  color: #111;
+}
+
+
+.menu-card p {
+  font-size: 1rem;
+  color: #345;
+  margin: 0.5rem 0;
+  line-height: 1.5;
+}
+
+.menu-card .price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ff7b00;
+  margin-top: 1rem;
+}
+
 form {
   margin: 2rem;
   padding: 1rem;
   border: 1px solid #ccc;
   background-color: #f9f9f9;
 }
-.menu-button:hover {
-  background-color: #ff7a1f;
-}
-
 .hero-video {
   flex: 1 1 400px;
   padding: 20px;
@@ -189,6 +249,10 @@ form {
     padding: 20px;
     text-align: center;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    position: ;
+    bottom: 0;
+    left: 0;
+    width: 100%;
   }
   
   #footer a {
