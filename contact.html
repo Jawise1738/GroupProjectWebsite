@@ -29,9 +29,7 @@
     </header>
 
     <section class="container" style="width: 80%; margin: 0 auto;">
-      <form
-        action="confirmation.html"
-        method="get"
+      <form action="confirmation.html" id="contactForm" method="get"
         style="display: flex; flex-direction: column; gap: 20px; padding: 20px; border: 1px solid #ccc; border-radius: 10px; background-color: #f9f9f9;"
       >
         <label for="name" style="font-size: 1.2em;">Name:</label>
@@ -70,8 +68,7 @@
 >
               Send Message
           </button>
-          <button
-            type="reset"
+          <button type="button" onclick="ClearForm()"
             style="flex: 1; padding: 15px; font-size: 1.2em; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer;"
             onmouseover="this.style.backgroundColor='#0056b3'"
             onmouseout="this.style.backgroundColor='#007BFF'"
@@ -90,6 +87,7 @@
     <a href="termsnconditions.html">Terms & Conditions</a>
     <p>&copy; 2025 Tropical Delights Cafe | All Rights Reserved</p>
   </footer>
+  <script src="scripts/site.js"></script>
 
 </body>
 </html>
