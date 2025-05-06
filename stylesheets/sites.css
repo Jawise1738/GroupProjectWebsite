@@ -1,5 +1,16 @@
 
   
+
+  
+  body {
+    margin: 0;
+    padding-top: 80px; /* adjust based on navbar height */
+  }
+  
+  main {
+    padding: 5px;
+  }
+  
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +19,15 @@
   h1 {
         color: antiquewhite;
   }
+  nav.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 20px;
+    
+  }
+  
 
   .navbar-title {
     text-decoration: none;
@@ -137,6 +157,21 @@
   transition: background-color 0.3s ease;
 }
 
+.menu-item {
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+.menu-item img {
+  max-width: 150px;
+  height: auto;
+}
+form {
+  margin: 2rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
 .menu-button:hover {
   background-color: #ff7a1f;
 }
@@ -188,6 +223,16 @@
     line-height: 1.8;
     text-align: center;
   }
+
+  .about-section ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .about-section li {
+    margin-bottom: 10px;
+  }
+  
   
   .about-section h1 {
     font-size: 2.5em;
@@ -256,6 +301,47 @@
     margin: 0;
     font-family: 'Georgia', serif;
     font-size: 0.9em;
+  }
+  
+  .gallery-main {
+    background-color: #f9f9f9;
+  }
+  
+  .gallery-title {
+    color: #006666;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .gallery-grid figure {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .gallery-grid img,
+  .gallery-grid video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .gallery-grid figcaption {
+    margin-top: 8px;
+    font-size: 1em;
+    color: #333;
   }
   
   
