@@ -6,7 +6,22 @@
   <title>Contact Us | Tropical Delights Cafe</title>
   <link rel="stylesheet" href="stylesheets/sites.css" />
 </head>
-<body class="with-fixed-nav">
+<style>
+  body {
+    background: url("images/contactusbg.jpeg") no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  main {
+    filter: blur(0);
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.932); 
+  }
+  </style>
+<body class="with-fixed-nav contact-page">
+
 
   <nav class="navbar">
     <img src="images/V1.png" alt="Tropical Delights Logo" />
@@ -22,57 +37,63 @@
       <a href="contact.html">Contact Us</a>
     </section>
   </nav>
+  
 
   <main>
     <header>
       <h1 style="color: black; text-align: center;">Contact Us</h1>
     </header>
 
-    <section class="container" style="width: 80%; margin: 0 auto;">
-      <form action="confirmation.html" id="contactForm" method="get"
-        style="display: flex; flex-direction: column; gap: 20px; padding: 20px; border: 1px solid #ccc; border-radius: 10px; background-color: #f9f9f9;"
-      >
-        <label for="name" style="font-size: 1.2em;">Name:</label>
+    <section class="contact-info">
+      <h2>Contact Information</h2>
+      <ul>
+        <li><strong>Location:</strong> 325 Half Way Tree, Tropical Plaza</li>
+        <li><strong>Email:</strong> <a href="mailto:info@tropicaldelights.com">info@tropicaldelightscafe.com</a></li>
+        <li><strong>Phone:</strong> 1-876-998-3254</li>
+        <li><strong>Opening Hours:</strong> 
+          <ul>
+            <li>Monday - Friday: 9:00 AM - 6:00 PM</li>
+            <li>Saturday: 10:00 AM - 4:00 PM</li>
+            <li>Sunday: Closed</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section class="contact-form">
+      <h1>For Inquires & Reservations</h1>
+      <form action="confirmation.html" id="contactForm" method="get">
+        <label for="name">Name:</label>
         <input
           type="text"
           id="name"
           name="name"
           required
-          style="padding: 10px; font-size: 1em; border: 1px solid #ccc; border-radius: 5px; width: 100%;"
         />
 
-        <label for="email" style="font-size: 1.2em;">Email:</label>
+        <label for="email">Email:</label>
         <input
           type="email"
           id="email"
           name="email"
           required
-          style="padding: 10px; font-size: 1em; border: 1px solid #ccc; border-radius: 5px; width: 100%;"
         />
 
-        <label for="message" style="font-size: 1.2em;">Message:</label>
+        <label for="message">Message:</label>
         <textarea
           id="message"
           name="message"
           rows="10"
           required
-          style="padding: 10px; font-size: 1em; border: 1px solid #ccc; border-radius: 5px; width: 100%;"
         ></textarea>
 
-        <div style="display: flex; gap: 20px;">
+        <div>
           <button
-             type="submit"
-              style="flex: 1; padding: 15px; font-size: 1.2em; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;"
-              onmouseover="this.style.backgroundColor='#0056b3'"
-              onmouseout="this.style.backgroundColor='#007BFF'"
->
-              Send Message
-          </button>
-          <button type="button" onclick="ClearForm()"
-            style="flex: 1; padding: 15px; font-size: 1.2em; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer;"
-            onmouseover="this.style.backgroundColor='#0056b3'"
-            onmouseout="this.style.backgroundColor='#007BFF'"
+            type="submit"
           >
+            Send Message
+          </button>
+          <button type="button" onclick="ClearForm()">
             Clear
           </button>
         </div>
@@ -87,7 +108,7 @@
     <a href="termsnconditions.html">Terms & Conditions</a>
     <p>&copy; 2025 Tropical Delights Cafe | All Rights Reserved</p>
   </footer>
-  <script src="scripts/site.js"></script>
 
+  <script src="scripts/site.js"></script>
 </body>
 </html>

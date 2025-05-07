@@ -17,7 +17,6 @@ html, body {
   padding-top: 100px;
 }
 
-
 nav.navbar,
 .navbar {
   display: flex;
@@ -31,6 +30,15 @@ nav.navbar,
   z-index: 1000;
   background-color: #64B8B1;
 }
+
+
+.navbar a.navbar-title h1 {
+  font-size: 1.4rem;
+  color: #f1f0eb;
+  font-family: 'Georgia', serif;
+  text-transform: uppercase;
+}
+
 
 .navbar-title {
   text-decoration: none;
@@ -280,7 +288,6 @@ h1.specials-title {
   font-size: 0.9em;
 }
 
-
 .gallery-main {
   background-color: #f9f9f9;
 }
@@ -355,74 +362,162 @@ h1.specials-title {
 }
 
 
+main {
+  background-color: #fafafa;
+  padding: 50px 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #006666;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: 'Georgia', serif;
+}
+
+section.contact-info {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+section.contact-info h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #006666;
+  font-family: 'Georgia', serif;
+}
+
+section.contact-info h3 {
+  font-size: 1.5rem;
+  color: #006666;
+  margin-bottom: 0.5rem;
+}
+
+section.contact-info p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+section.contact-info a {
+  font-size: 1rem;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+section.contact-info a:hover {
+  color: #0056b3;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+
 form {
-  margin: 2rem;
-  padding: 1rem;
-  border: 1px solid #ccc;
   background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-
-@media screen and (max-width: 1200px) {
-  .hero-content {
-    padding-top: 80px;
-  }
-
-  .text-video-wrapper {
-    gap: 20px;
-  }
+form label {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 10px;
 }
 
-@media screen and (max-width: 992px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 20px;
-  }
-
-  .navbar a {
-    padding: 10px 0;
-    font-size: 1rem;
-  }
-
-  .text-video-wrapper {
-    flex-direction: column;
-  }
-
-  .hero-text,
-  .hero-video {
-    flex: 1 1 100%;
-    padding: 10px;
-    text-align: center;
-  }
-
-  .hero-text h1 {
-    font-size: 2em;
-  }
-
-  .hero-text p {
-    font-size: 1em;
-  }
+form input,
+form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f1f1f1;
 }
+
+form button {
+  padding: 15px;
+  font-size: 1.2rem;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+form button[type="button"] {
+  background-color: #FF7A1F;
+}
+
+form button[type="button"]:hover {
+  background-color: #e05a0c;
+}
+
 
 @media screen and (max-width: 768px) {
-  .hero {
-    padding: 100px 10px 40px;
+  form {
+    padding: 20px;
   }
 
-  .navbar {
-    padding: 10px;
+  section.contact-info {
+    padding: 20px;
   }
 
-  .menu-grid {
-    padding: 1rem;
-    gap: 1rem;
+  form input,
+  form textarea {
+    font-size: 1rem;
+    padding: 12px;
   }
 
-  .menu-card {
-    max-width: 90%;
+  form button {
+    padding: 12px;
+    font-size: 1.1rem;
   }
 
-  .gallery-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
+  section.contact-info h2 {
+    font-size: 1.8rem;
+  }
+
+  section.contact-info h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section.contact-info h2 {
+    font-size: 1.6rem;
+  }
+
+  section.contact-info h3 {
+    font-size: 1.2rem;
+  }
+
+  form input,
+  form textarea {
+    font-size: 0
+  }

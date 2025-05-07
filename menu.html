@@ -5,23 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Menu | Tropical Delights Cafe</title>
   <link rel="stylesheet" href="stylesheets/sites.css" />
+  <link rel="stylesheet" href="stylesheets/cart.css" />
 </head>
 <body class="with-fixed-nav">
 
-  <nav class="navbar">
-    <img src="images/V1.png" alt="Tropical Delights Logo" />
-    <a href="index.html" class="navbar-title">
-      <h1>TROPICAL DELIGHTS CAFE</h1>
-    </a>
-    <section>
-      <a href="index.html#home">Home</a>
-      <a href="menu.html">Menu</a>
-      <a href="specials.html">Specials</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="about.html">About Us</a>
-      <a href="contact.html">Contact Us</a>
+  <header>
+    <nav class="navbar">
+      <img src="images/V1.png" alt="Tropical Delights Logo" />
+      <a href="index.html" class="navbar-title">
+        <h1>TROPICAL DELIGHTS CAFE</h1>
+      </a>
+      <section>
+        <a href="index.html#home">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="specials.html">Specials</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </section>
+    </nav>
+  
+    <section class="cart-controls">
+      <aside class="cart" onclick="alertCart()">
+        🛒<span class="cart-count" id="cart-count">0</span>
+      </aside>
+      <button onclick="checkout()">Checkout</button>
+      <button onclick="clearCart()">Clear Cart</button>
+      <p id="total-output"></p>
     </section>
-  </nav>
+  </header>
 
   <main>
     <section class="menusection">
@@ -29,17 +41,19 @@
       <section class="menu-grid">
 
         <article class="menu-card">
-          <img src="images/fjiwater.webp" alt="Tropical Smoothie">
+          <img src="images/fjiwater.webp" alt="Fiji Water">
           <h3>Fiji Water</h3>
-          <p> Natural artesian water, straight from Fiji.</p>
+          <p>Natural artesian water, straight from Fiji.</p>
           <p class="price">$2.00</p>
+          <button onclick="addToCart('Fiji Water', 2.00)">Add to Cart</button>
         </article>
 
         <article class="menu-card">
-          <img src="images/eggbaconsnd.jpg" alt="Tropical Smoothie">
+          <img src="images/eggbaconsnd.jpg" alt="Egg, Bacon & Cheese Sandwich">
           <h3>Egg, Bacon & Cheese Sandwich</h3>
-          <p> Island-style egg, bacon & cheese bliss.</p>
+          <p>Island-style egg, bacon & cheese bliss.</p>
           <p class="price">$6.45</p>
+          <button onclick="addToCart('Egg Sandwich', 6.45)">Add to Cart</button>
         </article>
 
         <article class="menu-card">
@@ -47,6 +61,7 @@
           <h3>Tropical Smoothie</h3>
           <p>A refreshing blend of mango, pineapple, and banana.</p>
           <p class="price">$4.99</p>
+          <button onclick="addToCart('Smoothie', 4.99)">Add to Cart</button>
         </article>
 
         <article class="menu-card">
@@ -54,6 +69,7 @@
           <h3>Açaí Bowl</h3>
           <p>Topped with fresh berries, granola, and honey.</p>
           <p class="price">$6.50</p>
+          <button onclick="addToCart('Açaí Bowl', 6.50)">Add to Cart</button>
         </article>
 
         <article class="menu-card">
@@ -61,10 +77,22 @@
           <h3>Iced Coffee</h3>
           <p>Cold-brewed coffee with your choice of milk.</p>
           <p class="price">$3.25</p>
+          <button onclick="addToCart('Iced Coffee', 3.25)">Add to Cart</button>
         </article>
 
       </section>
+
+      <section class="checkout">
+        <button onclick="checkout()">Checkout</button>
+        <p id="total-output"></p>
+      </section>
     </section>
+
+    <section class="checkout">
+      <button onclick="clearCart()">Clear Cart</button>
+      <p id="total-output"></p>
+    </section>
+    
   </main>
 
   <footer id="footer">
@@ -75,5 +103,6 @@
     <p>&copy; 2025 Tropical Delights Cafe | All Rights Reserved</p>
   </footer>
 
+  <script src="scripts/cart.js"></script>
 </body>
 </html>
