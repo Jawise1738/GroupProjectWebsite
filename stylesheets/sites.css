@@ -60,7 +60,7 @@ nav.navbar,
   color: #F5F5F5;
 }
 
-/* Hero Section */
+
 .hero {
   position: relative;
   background: url("../images/tropicalsmoothiemocktailhorizontal.jpg") no-repeat center center/cover;
@@ -190,7 +190,7 @@ nav.navbar,
   margin-top: 1rem;
 }
 
-/* About Section */
+
 .about-section {
   max-width: 1500px;
   margin: 0 auto;
@@ -236,7 +236,7 @@ nav.navbar,
   color: #f9f9f9;
 }
 
-/* Specials Section */
+
 h1.specials-title {
   color: white;
   background-color: #333;
@@ -280,7 +280,7 @@ h1.specials-title {
   font-size: 0.9em;
 }
 
-/* Gallery Section */
+
 .gallery-main {
   background-color: #f9f9f9;
 }
@@ -322,7 +322,7 @@ h1.specials-title {
   color: #333;
 }
 
-/* Footer */
+
 #footer {
   background-color: #64B8B1;
   color: #F5F5F5;
