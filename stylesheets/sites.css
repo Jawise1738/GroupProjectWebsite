@@ -1,4 +1,4 @@
-/* Core Layout Reset & Structure */
+
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +18,6 @@ html, body {
 }
 
 
-/* Navbar */
 nav.navbar,
 .navbar {
   display: flex;
@@ -132,7 +131,7 @@ nav.navbar,
   background-color: #ff7a1f;
 }
 
-/* Menu Section */
+
 .menusection h2 {
   text-align: center;
   font-size: 2.5rem;
@@ -355,7 +354,7 @@ h1.specials-title {
   color: #F5F5F5;
 }
 
-/* Form */
+
 form {
   margin: 2rem;
   padding: 1rem;
@@ -363,9 +362,6 @@ form {
   background-color: #f9f9f9;
 }
 
-/* =============================== */
-/*        RESPONSIVE DESIGN       */
-/* =============================== */
 
 @media screen and (max-width: 1200px) {
   .hero-content {
